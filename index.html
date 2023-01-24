@@ -88,7 +88,7 @@
     </section>
 
     <!--Exhibitions Section Code Starts-->
-    <section id="about" class="about_section">
+    <!-- <section id="about" class="about_section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -112,12 +112,98 @@
                 <div class="col-md-2"></div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+ 
+    
+    <style>
+        .privacy_policy_page{
+            display: block;
+            width: 100%;
+            padding: 90px 15px 0px 15px;
+        }
+        .custom_container{
+        max-width:1140px;
+        margin:0 auto;
+        }
+      
+        .privacy_policy_detail{
+           display: grid;
+            width: 100%;
+        }
+      
+      
+        .privacy_policy_detail_two{
+           display: grid;
+
+            width: 100%;
+            max-width: 540px;            
+
+        }
+        .privacy_policy_detail_two h2{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 49px;
+             line-height: 38px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 0px !important;
+            padding-bottom: 70px;
+        }
+        .privacy_policy_detail_two p{
+         font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+    line-height: 30px;
+            color: #fff;
+            width: 100%;
+        }
+       
+       
+        @media (max-width: 450px){
+       
+        }
+        
+        </style>
+        <div class="privacy_policy_page">
+        <div class="custom_container">
+       
+        <div class="privacy_policy_detail">
+       
+        <div class="privacy_policy_detail_two">
+        <h2>WHAT IS</h2>
+        <p>Being Waves is an album-long virtual reality experience that challenges our ideas about reality and perception, giving life to a mesmerising audio responsive environment, set to run the entire duration of the upcoming release by Kinkajous. Our goal is 
+            to generate an innovative, engaging and collective musical experience for audiences to share.</p>
+        </div>
+       
+        </div>
+        </div>
+        </div>
+
+        <div class="privacy_policy_page">
+            <div class="custom_container">
+           
+            <div class="privacy_policy_detail">
+           
+          
+            <div class="privacy_policy_detail_two">
+            <h2>ABOUT</h2>
+            <p>Being Waves is a project by Kinkajous and Studio ANRK. Kinkajous is a London based band, led by drummer/producer Benoît Parmentier and saxophonist/ clarinettist Adrien Cau, exploring the space between jazz, electronic and orchestral music. Studio ANRK is an R&D studio exploring the future of spatial, immersive entertainment creating experiences built in virtual and augmented reality, and exploring the metaverse concept.</p>
+           
+            </div>
+           
+            </div>
+            </div>
+            </div>
+        
+        
 
     <!--Exhibitions Section Code Ends-->
 
     <!--About Section Code Starts-->
-    <section id="about" class="about_section">
+    <!-- <section id="about" class="about_section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -148,11 +234,55 @@
             </div>
         </div>
         <br /><br /><br />
-    </section>
+    </section> -->
     <!--About Section Code Ends-->
 
     <!-- Gallery Code Starts-->
-    <section id="vrVersion" class="versions vr_version">
+
+    <style>
+        .images_grid{
+            display: block;
+            width: 100%;
+            padding: 90px 15px 60px 15px;
+        }
+        .custom_container{
+        max-width:1140px;
+        margin:0 auto;
+        }
+      
+    
+        .images_grid_main{
+           display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 30px;
+            width: 100%;       
+        }
+        .images_grid_main img{
+            width: 100%;
+            height: 100%;
+        }
+       
+       
+       
+        @media (max-width: 450px){
+            .images_grid_main{
+            grid-template-columns: 1fr;
+            gap: 20px 20px;    
+        }
+        }
+        
+        </style>
+    <section class="images_grid">
+        <div class="custom_container">
+            <div class="images_grid_main">
+                <img class="main_pro main_image_left" src="assets/img/img1.jpg" />
+                <img class="main_pro main_image_right" src="assets/img/img2.jpg" />
+                <img class="main_pro main_image_left_c" src="assets/img/img3.jpg" />
+                <img class="main_pro main_image_right_d" src="assets/img/img4.jpg" />
+            </div>
+        </div>
+    </section>
+    <!-- <section id="vrVersion" class="versions vr_version">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -171,50 +301,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Gallery Section Code Ends-->
 
 
-
-  
-
-  
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-     function NewsletteronSubmit(token) {
-         $("#quick_newslatter_recaptcha").submit();
-     }
-   
-     function validate_newslatter(event) {;
-         event.preventDefault();
-   
-         $("#quick_newslatter_recaptcha").validate({
-             rules: {
-   
-                 email: {
-                     required: true,
-                     email: true
-                 },               
-                
-             }
-   
-         });
-   
-          if ($('#quick_newslatter_recaptcha').valid()) {
-              grecaptcha.execute();
-          }
-   
-     }
-   
-      function onload() {
-     
-          var element = document.getElementById('newsletter-submit-recaptcha');
-          element.onclick = validate_newslatter;
-      }
-      
-    </script>
-    
 <style>
 
 .newsletter_custom_section {
